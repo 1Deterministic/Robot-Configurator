@@ -56,3 +56,10 @@ docs/_build/
 
 # PyBuilder
 target/
+
+/.git/
+/.idea/
+/Releases/
+/History/
+/Private/
+/__pycache__/

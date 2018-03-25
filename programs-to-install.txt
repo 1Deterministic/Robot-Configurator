@@ -1,0 +1,135 @@
+# This file contains the programs that will be installed
+#
+# Use # at the start of a line to ignore it
+# Remove # from the start of a line to activate it
+#
+# If can leave unsupported programs by your platform for 
+# installation, they will be ignored automatically
+#
+# These are all options available
+
+
+
+# preconfig prepares the environment for the installations later
+preconfig
+
+
+
+# Google Chrome browser (Windows and Linux)
+google-chrome
+
+# Mozilla Firefox browser (Windows and Linux)
+firefox
+
+# 7-Zip file archiver (Windows and Linux (p7zip))
+7-zip
+
+# VLC player (Windows and Linux)
+vlc
+
+# Steam game platform (Windows and Linux)
+steam
+
+# Origin game platform (Windows and Linux)
+origin
+
+# Uplay game platform (Windows and Linux)
+uplay
+
+# MediaMonkey music player (Windows only)
+mediamonkey
+
+# Python 3 interpreter (Windows and Linux)
+python
+
+# Python 2 interpreter (Windows and Linux)
+python2
+
+# Visual Studio 2017 Community (Windows only)
+visual-studio-2017-community
+
+# Unity 3D game engine (Windows and Linux)
+unity3d
+
+# Racket interpreter and DrRacket IDE (Windows and Linux)
+racket
+
+# Prolog interpreter - and SWI-Prolog IDE for Windows (Windows and Linux)
+prolog
+
+# Inkscape vector graphics editor (Windows and Linux)
+inkscape
+
+# Krita image editor (Windows and Linux)
+krita
+
+# QBitTorrent torrent client (Windows and Linux)
+qbittorrent
+
+# Google Play Music Desktop Player music player (Windows and Linux)
+google-play-music-desktop-player
+
+# MSI Afterburner overclocking tool and system monitor (Windows only)
+msi-afterburner
+
+# Win32 Disk Imager usb image write tool (Windows only)
+win32-disk-imager
+
+# Rufus usb image write tool (Windows only)
+rufus
+
+# Clementine music player and library manager (Windows and Linux)
+clementine
+
+# Syncthing folder sync tool - and (Linux) systemd autostart setup for the running user (Windows and Linux)
+syncthing
+
+# Android Studio IDE (Windows and Linux)
+android-studio
+
+# Visual Studio Code (Windows and Linux)
+visual-studio-code
+
+# MySQL Workbench (Windows and Linux)
+mysql-workbench
+
+# Netbeans IDE (Windows and Linux)
+netbeans
+
+# Arduino IDE (Windows and Linux)
+arduino
+
+# Allegro5 C game library (Linux only)
+allegro5
+
+# Gitkraken desktop graphical git client (Windows and Linux)
+gitkraken
+
+# GIMP image editor (Windows and Linux)
+gimp
+
+# Pycharm Community python IDE (Windows and Linux)
+pycharm-community
+
+# Virtualbox virtual machine host (Windows and Linux)
+virtualbox
+
+# Woeusb Windows usb image write tool for Linux (Linux only)
+woeusb
+
+# youtube-dl video downloader (Windows and Linux)
+youtube-dl
+
+# stress stress test (Windows and Linux)
+stress
+
+# Nuitka python compiler (Windows and Linux)
+nuitka
+
+# eyeD3 python library (Windows and Linux)
+eyed3
+
+
+
+# remove-uneeded-dependencies removes unused dependencies (Linux only)
+remove-uneeded-dependencies

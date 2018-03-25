@@ -1,0 +1,2 @@
+yaourt -S syncthing
+#os.system("sudo systemctl enable syncthing@" + os.getlogin() + ".service")

@@ -1,0 +1,3 @@
+#os.system("sudo pacman -S virtualbox linux" + get_linux_kernel() + "-virtualbox-host-modules")
+#os.system("sudo gpasswd -a " + os.getlogin() + " vboxusers")
+yaourt -S virtualbox-ext-oracle
