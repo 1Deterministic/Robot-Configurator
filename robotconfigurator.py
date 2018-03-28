@@ -13,6 +13,9 @@ def get_os():
 
         if distro == "ManjaroLinux":
             return "Manjaro"
+        
+        elif distro == "Debian":
+            return "Debian"
 
         else:
             return "Other"
@@ -36,15 +39,15 @@ def install(program, system):
     try:
         with open("Scripts/" + system + "/" + program, "r") as script:
             for line in script:
-                if not line == "\n":
-                    if line.startswith("#"):
+                if (not line == "\n") and (not line.startswith("#")):
+                    if line.startswith("!"):
                         exec(line[1:].replace('\n', ''))
                     else:
                         os.system(line.replace('\n', ''))
                 else:
                     pass
     except IOError:
-        print("Not supported")
+        print(program + " is not supported on this platform")
 
 # starts the program
 if __name__ == "__main__":

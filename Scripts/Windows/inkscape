@@ -1,1 +1,2 @@
+# installs Inkscape
 choco install inkscape -y 

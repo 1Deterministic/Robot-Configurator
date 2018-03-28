@@ -1,1 +1,2 @@
+# installs Rufus usb image writing tool
 choco install rufus -y 

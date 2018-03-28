@@ -1,1 +1,2 @@
+# removes uneeded dependencies
 sudo pacman -R $(pacman -Qtdq) 

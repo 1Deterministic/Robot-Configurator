@@ -1,2 +1,10 @@
 #os.system("@\"%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command \"iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))\"&& SET \"PATH=%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\"")
-#os.environ["PATH"] += os.pathsep + "C:\\ProgramData\\chocolatey\\bin" 
+
+# installs Chocolatey
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
+# updates the environment to include the Chocolatey path
+!os.environ["PATH"] += os.pathsep + "C:\\ProgramData\\chocolatey\\bin"
+
+# texts to the user
+echo "You will need to reopen CMD to use Chocolatey after the execution ended"

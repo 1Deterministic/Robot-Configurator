@@ -1,1 +1,2 @@
+# installs Pycharm Community
 choco install pycharm-community -y 

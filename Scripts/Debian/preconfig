@@ -1,0 +1,22 @@
+# updates the repos
+echo "Enter the root password"
+su -c "apt update"
+
+# installs sudo on the machine
+echo "Enter the root password"
+su -c "apt install sudo"
+
+# defines that users in sudo group can run sudo commands
+echo "Enter the root password"
+su -c "echo 'sudo   ALL=(ALL:ALL) ALL' >> /etc/sudoers"
+
+# defines that the user can run sudo commands
+echo "Enter the root password"
+su -c "echo '$(whoami)   ALL=(ALL:ALL) ALL' >> /etc/sudoers"
+
+# adds user in the sudo group
+echo "Enter the root password"
+su -c "adduser $(whoami) sudo"
+
+# updates the repos once again
+sudo apt update

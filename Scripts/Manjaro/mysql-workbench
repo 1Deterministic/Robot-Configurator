@@ -1,1 +1,2 @@
+# installs MySQL Workbench
 yaourt -S mysql-workbench

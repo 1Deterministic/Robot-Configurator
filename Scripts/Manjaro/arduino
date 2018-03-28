@@ -1,1 +1,2 @@
+# installs Arduino IDE
 yaourt -S arduino

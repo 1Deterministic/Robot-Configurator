@@ -1,1 +1,2 @@
+# installs Pytcharm Community
 yaourt -S pycharm-community-edition

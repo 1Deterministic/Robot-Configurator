@@ -1,3 +1,8 @@
-#os.system("sudo pacman -S virtualbox linux" + get_linux_kernel() + "-virtualbox-host-modules")
-#os.system("sudo gpasswd -a " + os.getlogin() + " vboxusers")
+# installs Virtualbox and its host modules for the running kernel
+!os.system("sudo pacman -S virtualbox linux" + get_linux_kernel() + "-virtualbox-host-modules")
+
+# includes the user in the vboxusers group
+sudo gpasswd -a $(whoami) vboxusers
+
+# installs Virtualbox extension pack
 yaourt -S virtualbox-ext-oracle

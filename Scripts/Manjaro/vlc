@@ -1,1 +1,2 @@
+# installs VLC player
 yaourt -S vlc-nightly 

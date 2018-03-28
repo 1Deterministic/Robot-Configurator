@@ -1,1 +1,5 @@
+# installs netbeans
 yaourt -S netbeans
+
+# improves font rendering
+sudo sh -c "echo 'netbeans_default_options=\"-J-client -J-Xss2m -J-Xms32m -J-XX:PermSize=32m -J-Dawt.useSystemAAFontSettings=on\"' >> /usr/share/netbeans/etc/netbeans.conf"

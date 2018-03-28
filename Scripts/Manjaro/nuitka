@@ -1,1 +1,2 @@
+# installs Nuitka Python compiler
 sudo pip install nuitka 

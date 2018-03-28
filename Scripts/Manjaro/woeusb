@@ -1,1 +1,2 @@
+# installs WoeUSB usb image writing tool
 yaourt -S woeusb-git

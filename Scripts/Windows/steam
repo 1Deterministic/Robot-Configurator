@@ -1,1 +1,2 @@
+# installs Steam
 choco install steam -y 

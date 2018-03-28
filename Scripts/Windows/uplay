@@ -1,1 +1,2 @@
+# installs Uplay
 choco install uplay -y 

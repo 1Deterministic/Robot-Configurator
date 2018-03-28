@@ -1,1 +1,2 @@
+# installs MSI Afterburner
 choco install msiafterburner -y 

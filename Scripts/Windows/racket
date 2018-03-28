@@ -1,1 +1,2 @@
+# installs Racket and DrRacket IDE
 choco install racket -y 

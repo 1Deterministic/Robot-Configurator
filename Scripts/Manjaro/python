@@ -1,1 +1,2 @@
+# installs Python
 yaourt -S python

@@ -1,1 +1,2 @@
+# installs Google Chrome browser
 choco install googlechrome -y 

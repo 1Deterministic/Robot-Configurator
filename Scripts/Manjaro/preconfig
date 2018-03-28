@@ -1,3 +1,8 @@
-#append_text_to_file("/home/" + os.getlogin() + "/.yaourtrc", "NOCONFIRM=1\nBUILD_NOCONFIRM=1\nEDITFILES=0")
-#os.system("sudo pacman -S yaourt")
-#os.system("yaourt -Sy") 
+# sets yaourt to skip aking for pkgbuild edit 
+echo "NOCONFIRM=1\nBUILD_NOCONFIRM=1\nEDITFILES=0" >> /home/$(whoami)/.yaourtrc
+
+# installs yaourt
+sudo pacman -S yaourt
+
+# updates the repos
+yaourt -Sy

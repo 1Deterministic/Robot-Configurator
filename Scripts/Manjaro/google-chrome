@@ -1,1 +1,2 @@
+# installs Google Chrome browser
 yaourt -S google-chrome 

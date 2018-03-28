@@ -1,1 +1,2 @@
+# installs GIMP
 yaourt -S gimp

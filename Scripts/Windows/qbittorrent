@@ -1,1 +1,2 @@
+# installs QBitTorrent
 choco install qbittorrent -y 

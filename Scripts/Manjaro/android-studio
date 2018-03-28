@@ -1,1 +1,2 @@
+# installs Android Studio
 yaourt -S android-studio

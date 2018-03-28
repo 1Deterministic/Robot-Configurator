@@ -1,1 +1,2 @@
+# installs Arduino IDE
 choco install arduino -y 

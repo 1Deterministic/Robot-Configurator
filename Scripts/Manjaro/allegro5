@@ -1,1 +1,2 @@
+# installs allegro 5
 yaourt -S allegro5-git

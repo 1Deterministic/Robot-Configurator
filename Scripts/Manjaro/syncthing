@@ -1,2 +1,5 @@
+# installs Syncthing
 yaourt -S syncthing
-#os.system("sudo systemctl enable syncthing@" + os.getlogin() + ".service")
+
+# sets syncthing to autostart for the current user
+sudo systemctl enable syncthing@$(whoami).service

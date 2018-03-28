@@ -1,1 +1,2 @@
+# installs Win32 Disk Imager usb image writing tool
 choco install win32diskimager -y 

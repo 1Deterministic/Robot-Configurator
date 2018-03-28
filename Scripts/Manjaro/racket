@@ -1,1 +1,2 @@
+# installs Racket and DrRacket IDE
 yaourt -S racket

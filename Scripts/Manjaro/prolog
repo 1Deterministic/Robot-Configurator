@@ -1,1 +1,2 @@
+# installs SWI Prolog
 yaourt -S swi-prolog

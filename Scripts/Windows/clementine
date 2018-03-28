@@ -1,1 +1,2 @@
+# installs Clementine player
 choco install clementine -y 

@@ -1,1 +1,2 @@
+# installs Python
 choco install python -y 

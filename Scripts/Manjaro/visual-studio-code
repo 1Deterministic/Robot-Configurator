@@ -1,1 +1,2 @@
+# installs Visual Studio Code
 yaourt -S visual-studio-code-bin

@@ -1,1 +1,2 @@
+# installs QBitTorrent
 yaourt -S qbittorrent 

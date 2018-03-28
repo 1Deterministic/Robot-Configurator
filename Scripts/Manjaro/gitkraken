@@ -1,2 +1,5 @@
+# fixes key problems during installation
 gpg --recv-keys --keyserver hkp://18.9.60.141 5CC908FDB71E12C2
+
+# installs GitKraken git graphical tool
 yaourt -S gitkraken

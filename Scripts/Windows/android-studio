@@ -1,1 +1,2 @@
+# installs Android Studio
 choco install androidstudio -y 

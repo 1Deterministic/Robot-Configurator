@@ -1,1 +1,2 @@
+# installs Mozilla Firefox browser
 yaourt -S firefox

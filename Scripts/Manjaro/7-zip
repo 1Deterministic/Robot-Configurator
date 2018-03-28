@@ -1,1 +1,2 @@
+# installs p7zip
 yaourt -S p7zip 

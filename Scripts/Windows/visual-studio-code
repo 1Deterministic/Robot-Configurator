@@ -1,1 +1,2 @@
+# installs Visual Studio Code
 choco install visualstudiocode -y 

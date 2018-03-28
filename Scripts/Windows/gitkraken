@@ -1,1 +1,2 @@
+# installs GitKraken git graphical tool
 choco install gitkraken -y 

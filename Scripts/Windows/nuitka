@@ -1,1 +1,3 @@
+# installs Nuitka python compiler
 pip install nuitka
+echo "You need to install MS Visual Studio Community (Nuitka uses its C compiler)"
