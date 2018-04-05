@@ -3,7 +3,7 @@ echo "NOCONFIRM=1" >> /home/$(whoami)/.yaourtrc
 echo "BUILD_NOCONFIRM=1" >> /home/$(whoami)/.yaourtrc
 echo "EDITFILES=0" >> /home/$(whoami)/.yaourtrc
 
-#
+# remounts /tmp with a larger size
 sudo mount -o remount,size=16G,noatime /tmp
 
 # installs yaourt
