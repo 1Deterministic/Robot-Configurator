@@ -1,5 +1,10 @@
 # sets yaourt to skip aking for pkgbuild edit 
-echo "NOCONFIRM=1\nBUILD_NOCONFIRM=1\nEDITFILES=0" >> /home/$(whoami)/.yaourtrc
+echo "NOCONFIRM=1" >> /home/$(whoami)/.yaourtrc
+echo "BUILD_NOCONFIRM=1" >> /home/$(whoami)/.yaourtrc
+echo "EDITFILES=0" >> /home/$(whoami)/.yaourtrc
+
+#
+sudo mount -o remount,size=16G,noatime /tmp
 
 # installs yaourt
 sudo pacman -S yaourt

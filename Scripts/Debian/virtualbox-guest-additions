@@ -1,0 +1,5 @@
+#sudo apt install linux-headers-$(uname -r) build-essential
+#sudo apt install libdouble-conversion1 libpcre16-3 libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5 libqt5opengl5 libqt5printsupport5 libqt5svg5 libqt5widgets5 libqt5x11extras5 libxcb-xinerama0 mesa-utils qt5-gtk-platformtheme qttranslations5-l10n
+#wget http://download.virtualbox.org/virtualbox/5.2.6/virtualbox-5.2_5.2.6-120293~Debian~stretch_amd64.deb
+#sudo dpkg -i virtualbox-5.2_5.2.6-120293~Debian~stretch_amd64.deb
+#rm virtualbox-5.2_5.2.6-120293~Debian~stretch_amd64.deb
