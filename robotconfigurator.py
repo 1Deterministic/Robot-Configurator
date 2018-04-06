@@ -3,6 +3,10 @@ import sys
 import platform
 import subprocess
 
+# returns the current user (just a reminder :p)
+def get_user():
+    return os.getlogin()
+
 # returns the running OS to decide where to search the installation scripts
 def get_os():
     if platform.system() == "Windows":
