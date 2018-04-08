@@ -1,0 +1,58 @@
+# This file is a template on how to use files on Robot Configurator
+#
+# Pass this file as a parameter to use it
+# It will not be used automatically
+#
+# The programs listed here will be installed in order
+# Keep that in mind to install dependencies first
+#
+# Use # at the start of a line to ignore it
+# Remove # from the start of a line to activate it
+#
+# You can leave unsupported programs by your platform for 
+# installation, they will be ignored automatically
+#
+# So if you use, for instance, ./robotconfigurator.exe "/path/to/template.txt"
+# All the programs below will be installed (if supported) on the exact same order
+
+7-zip
+allegro5
+android-studio
+arduino
+clementine
+eyed3
+firefox
+firefox-esr
+gimp
+gitkraken
+google-chrome
+google-play-music-desktop-player
+inkscape
+krita
+mediamonkey
+msi-afterburner
+mysql-workbench
+netbeans
+nuitka
+origin
+preconfig
+prolog
+pycharm-community
+python
+python2
+qbittorrent
+racket
+rufus
+remove-uneeded-dependencies
+soundconverter
+steam
+syncthing
+unity3d
+uplay
+virtualbox
+visual-studio-2017-community
+visual-studio-code
+vlc
+win32-disk-imager
+woeusb
+youtube-dl

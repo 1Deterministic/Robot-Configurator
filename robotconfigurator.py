@@ -23,6 +23,8 @@ def get_os():
 
         else:
             return "Other"
+    else:
+        return "Other"
 
 # append some text to a file, useful to set config strings to system files.
 def append_text_to_file(path, content):
@@ -58,23 +60,27 @@ if __name__ == "__main__":
     # check if the system is supported
     if not get_os() == "Other":
         for param in sys.argv[1:]:
-            # tries to install every parameter received
-            if os.path.isfile(param):
-                try:
+            # tries to run the installation scripts
+            try:
+                # if a file was received
+                if os.path.isfile(param):
+                    # tries to install every parameter received
                     with open(param, "r") as programs_to_install:
                         for line in programs_to_install:
                             if (not line.startswith("#")) and (not line == "\n"):
                                 install(line.replace('\n', ''), get_os())
 
-                except KeyboardInterrupt:
-                    print("Stopped by user")
+                # install every entry if a file is received (check programs-to-install.txt for an example)
+                else:
+                    install(param, get_os())
 
-                except IOError:
-                    print("Could not read the specified file")
+            except KeyboardInterrupt:
+                print("Stopped by user")
+                os._exit(0)
 
-            # install every entry if a file is received (check programs-to-install.txt for an example)
-            else:
-                install(param, get_os())
+            except IOError:
+                print("Could not read the specified file")
+
 
     else:
         print("Unsupported OS :(")
