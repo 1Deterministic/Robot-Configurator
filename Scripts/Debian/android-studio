@@ -1,12 +1,17 @@
 # installs Android Studio
 sudo apt install lib32stdc++6 unzip -y
 
-# downloads Android Studio
-wget https://dl.google.com/dl/android/studio/ide-zips/3.1.0.16/android-studio-ide-173.4670197-linux.zip
-unzip android-studio-ide-173.4670197-linux.zip
+# creates a temporary folder
+sudo mkdir /tmp/android-studio
 
-# moves the extracted folde to /opt
-sudo mv android-studio /opt/
+# downloads Android Studio
+sudo wget https://dl.google.com/dl/android/studio/ide-zips/3.1.0.16/android-studio-ide-173.4670197-linux.zip -P /tmp/android-studio
+
+# extracts the downloaded zip file to /opt
+sudo unzip /tmp/android-studio/android-studio-ide-173.4670197-linux.zip -d /opt
+
+# removes the temporary folder
+sudo rm -rf /tmp/android-studio
 
 # creates ~/.local/share/applications if doesnt exist
 mkdir ~/.local/share/applications
