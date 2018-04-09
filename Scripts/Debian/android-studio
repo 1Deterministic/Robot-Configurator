@@ -8,6 +8,9 @@ unzip android-studio-ide-173.4670197-linux.zip
 # moves the extracted folde to /opt
 sudo mv android-studio /opt/
 
+# creates ~/.local/share/applications if doesnt exist
+mkdir ~/.local/share/applications
+
 # adds a launcher icon
 sudo echo "[Desktop Entry]" >> ~/.local/share/applications/jetbrains-studio.desktop
 sudo echo "Version=1.0" >> ~/.local/share/applications/jetbrains-studio.desktop
