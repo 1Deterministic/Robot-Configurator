@@ -1,5 +1,20 @@
-#sudo apt install linux-headers-$(uname -r) build-essential
-#sudo apt install libdouble-conversion1 libpcre16-3 libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5 libqt5opengl5 libqt5printsupport5 libqt5svg5 libqt5widgets5 libqt5x11extras5 libxcb-xinerama0 mesa-utils qt5-gtk-platformtheme qttranslations5-l10n
-#wget http://download.virtualbox.org/virtualbox/5.2.6/virtualbox-5.2_5.2.6-120293~Debian~stretch_amd64.deb
-#sudo dpkg -i virtualbox-5.2_5.2.6-120293~Debian~stretch_amd64.deb
-#rm virtualbox-5.2_5.2.6-120293~Debian~stretch_amd64.deb
+# installs linux headers for the current kernel and build-essential packages
+sudo apt install linux-headers-$(uname -r) build-essential -y
+
+# creates a temporary folder
+sudo mkdir /tmp/vbox-iso
+
+# downloads the guest additions iso to the temporary folder
+sudo wget http://download.virtualbox.org/virtualbox/5.2.8/VBoxGuestAdditions_5.2.8.iso -P /tmp/vbox-iso
+
+# extracts the downloaded iso
+sudo 7z x /tmp/vbox-iso/VBoxGuestAdditions_5.2.8.iso -o/tmp/vbox-iso
+
+# turns the installer executable
+sudo chmod +x /tmp/vbox-iso/VBoxLinuxAdditions.run
+
+# runs the installer
+sudo /tmp/vbox-iso/VBoxLinuxAdditions.run
+
+# removes the temporary folder
+sudo rm -rf /tmp/vbox-iso
