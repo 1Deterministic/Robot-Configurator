@@ -1,0 +1,2 @@
+# installs p7zip
+sudo apt install p7zip -y

@@ -1,2 +1,2 @@
 # installs Mozilla Firefox extended support release browser
-sudo apt install firefox-esr
+sudo apt install firefox-esr -y

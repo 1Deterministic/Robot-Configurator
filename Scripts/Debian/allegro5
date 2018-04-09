@@ -1,0 +1,2 @@
+# installs allegro 5
+sudo apt install liballegro5.2 -y

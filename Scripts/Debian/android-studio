@@ -1,0 +1,21 @@
+# installs Android Studio
+sudo apt install lib32stdc++6 unzip -y
+
+# downloads Android Studio
+wget https://dl.google.com/dl/android/studio/ide-zips/3.1.0.16/android-studio-ide-173.4670197-linux.zip
+unzip android-studio-ide-173.4670197-linux.zip
+
+# moves the extracted folde to /opt
+sudo mv android-studio /opt/
+
+# adds a launcher icon
+sudo echo "[Desktop Entry]" >> ~/.local/share/applications/jetbrains-studio.desktop
+sudo echo "Version=1.0" >> ~/.local/share/applications/jetbrains-studio.desktop
+sudo echo "Type=Application" >> ~/.local/share/applications/jetbrains-studio.desktop
+sudo echo "Name=Android Studio" >> ~/.local/share/applications/jetbrains-studio.desktop
+sudo echo "Icon=/opt/android-studio/bin/studio.png" >> ~/.local/share/applications/jetbrains-studio.desktop
+sudo echo "Exec="/opt/android-studio/bin/studio.sh" %f" >> ~/.local/share/applications/jetbrains-studio.desktop
+sudo echo "Comment=The Drive to Develop" >> ~/.local/share/applications/jetbrains-studio.desktop
+sudo echo "Categories=Development;IDE;" >> ~/.local/share/applications/jetbrains-studio.desktop
+sudo echo "Terminal=false" >> ~/.local/share/applications/jetbrains-studio.desktop
+sudo echo "StartupWMClass=jetbrains-studio" >> ~/.local/share/applications/jetbrains-studio.desktop
