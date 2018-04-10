@@ -20,3 +20,6 @@ su -c "adduser $(whoami) sudo"
 
 # updates the repos once again
 sudo apt update
+
+# installs pip for python3
+sudo apt install python3-pip -y

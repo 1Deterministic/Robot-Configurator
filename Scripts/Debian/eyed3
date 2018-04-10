@@ -1,0 +1,2 @@
+# installs eyed3 Python library
+sudo pip3 install eyed3
