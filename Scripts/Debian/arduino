@@ -1,0 +1,2 @@
+# installs Arduino IDE
+sudo apt install arduino -y

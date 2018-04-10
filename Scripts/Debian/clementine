@@ -1,0 +1,2 @@
+# installs Clementine player
+sudo apt install clementine -y
