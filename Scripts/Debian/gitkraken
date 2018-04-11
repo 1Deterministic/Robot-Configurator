@@ -1,0 +1,14 @@
+# installs dependencies
+sudo apt install gconf2 gvfs-bin -y
+
+# creates a temporary folder
+sudo mkdir /tmp/gitkraken
+
+# downloads .deb installer
+sudo wget https://release.gitkraken.com/linux/gitkraken-amd64.deb -P /tmp/gitkraken
+
+# installs GitKraken
+sudo dpkg -i /tmp/gitkraken/gitkraken-amd64.deb
+
+# removes the temporary folder
+sudo rm -rf /tmp/gitkraken
