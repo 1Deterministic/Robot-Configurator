@@ -1,0 +1,14 @@
+# installs the dependencies
+sudo apt install libappindicator1 -y
+
+# creates a temporary folder
+sudo mkdir /tmp/google-chrome
+
+# downloads the installer
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P /tmp/google-chrome
+
+# installs Google Chrome
+sudo dpkg -i /tmp/google-chrome/google-chrome-stable_current_amd64.deb
+
+# removes the temporary folder
+sudo rm -rf /tmp/google-chrome
