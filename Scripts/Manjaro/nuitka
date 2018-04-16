@@ -1,2 +1,2 @@
 # installs Nuitka Python compiler
-sudo pacman -S nuitka 
+sudo pip install nuitka
