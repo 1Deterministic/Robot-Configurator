@@ -1,2 +1,2 @@
 # installs Python 2
-choco install python2 -y 
+choco install python2 --ignorechecksum -y

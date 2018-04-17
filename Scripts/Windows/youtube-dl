@@ -1,2 +1,2 @@
 # installs youtube-dl video downloader
-choco install youtube-dl -y
+choco install youtube-dl --ignorechecksum -y

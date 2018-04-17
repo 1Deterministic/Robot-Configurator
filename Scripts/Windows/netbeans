@@ -1,2 +1,2 @@
 # installs Netbeans
-choco install netbeans -y 
+choco install netbeans --ignorechecksum -y 

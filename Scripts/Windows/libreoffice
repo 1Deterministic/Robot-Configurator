@@ -1,0 +1,2 @@
+# installs libreoffice
+choco install libreoffice --ignorechecksum -y

@@ -1,7 +1,5 @@
 # installs Syncthing
-choco install syncthing -y
-
-#!append_text_to_file("C:\\Users\\" + os.getlogin() + "\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\syncthing.bat", "start syncthing.exe")
+choco install syncthing --ignorechecksum -y
 
 # sets Syncthing to run on startup for the current user
-echo "start syncthing.exe" > "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\syncthing.bat"
+echo start "Syncthing" /low syncthing.exe -no-console -no-browser > "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\syncthing.bat"

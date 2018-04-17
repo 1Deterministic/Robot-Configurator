@@ -1,2 +1,2 @@
 # installs Racket and DrRacket IDE
-choco install racket -y 
+choco install racket --ignorechecksum -y

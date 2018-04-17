@@ -1,2 +1,3 @@
 # installs Uplay
-choco install uplay -y 
+choco install uplay --ignorechecksum -y
+

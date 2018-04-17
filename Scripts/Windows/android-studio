@@ -1,2 +1,2 @@
 # installs Android Studio
-choco install androidstudio -y 
+choco install androidstudio --ignorechecksum -y 

@@ -1,2 +1,2 @@
 # installs Arduino IDE
-choco install arduino -y 
+choco install arduino --ignorechecksum -y 

@@ -1,2 +1,3 @@
 # installs Visual Studio Code
-choco install visualstudiocode -y 
+choco install visualstudiocode --ignorechecksum -y
+

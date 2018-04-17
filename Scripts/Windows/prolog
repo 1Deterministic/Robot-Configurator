@@ -1,2 +1,2 @@
 # installs SWI-Prolog
-choco install swi-prolog -y 
+choco install swi-prolog --ignorechecksum -y 

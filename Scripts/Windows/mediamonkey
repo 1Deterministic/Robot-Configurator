@@ -1,2 +1,2 @@
 # installs MediaMonkey player
-choco install mediamonkey -y 
+choco install mediamonkey --ignorechecksum -y 

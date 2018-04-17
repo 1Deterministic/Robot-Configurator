@@ -1,2 +1,3 @@
 # installs Virtualbox
-choco install virtualbox -y 
+choco install virtualbox --ignorechecksum -y
+

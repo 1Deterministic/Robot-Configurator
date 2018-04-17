@@ -1,2 +1,2 @@
 # installs Google Chrome browser
-choco install googlechrome -y 
+choco install googlechrome --ignorechecksum -y 

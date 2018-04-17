@@ -1,2 +1,2 @@
 # installs Pycharm Community
-choco install pycharm-community -y 
+choco install pycharm-community --ignorechecksum -y 

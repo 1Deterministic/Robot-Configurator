@@ -1,2 +1,2 @@
 # installs Google Play Music Desktop Player
-choco install gpmdp 
+choco install gpmdp --ignorechecksum -y

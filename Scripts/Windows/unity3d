@@ -1,2 +1,3 @@
 # installs Unity3D engine and its standard assets
-choco install unity unity-standard-assets -y 
+choco install unity unity-standard-assets --ignorechecksum -y
+

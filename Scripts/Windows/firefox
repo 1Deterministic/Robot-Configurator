@@ -1,2 +1,2 @@
 # installs Mozilla Firefox browser
-choco install firefox -y 
+choco install firefox --ignorechecksum -y 

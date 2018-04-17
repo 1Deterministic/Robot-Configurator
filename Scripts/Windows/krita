@@ -1,2 +1,2 @@
 # installs Krita
-choco install krita -y 
+choco install krita --ignorechecksum -y 

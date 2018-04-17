@@ -1,2 +1,5 @@
 # installs Python
-choco install python -y 
+choco install python --ignorechecksum -y
+
+# updates the environment to include the pip path, to support pip install without restarting the shell
+!os.environ["PATH"] += os.pathsep + "C:\\Python36\\Scripts"

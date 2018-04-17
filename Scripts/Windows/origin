@@ -1,2 +1,2 @@
 # installs Origin
-choco install origin -y 
+choco install origin --ignorechecksum -y 

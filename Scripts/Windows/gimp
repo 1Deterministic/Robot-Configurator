@@ -1,2 +1,2 @@
 # installs GIMP
-choco install gimp -y 
+choco install gimp --ignorechecksum -y 

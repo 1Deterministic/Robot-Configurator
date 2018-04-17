@@ -1,2 +1,2 @@
 # installs MSI Afterburner
-choco install msiafterburner -y 
+choco install msiafterburner --ignorechecksum -y 

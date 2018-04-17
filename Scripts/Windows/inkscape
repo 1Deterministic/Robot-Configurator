@@ -1,2 +1,2 @@
 # installs Inkscape
-choco install inkscape -y 
+choco install inkscape --ignorechecksum -y 

@@ -1,2 +1,2 @@
 # installs Clementine player
-choco install clementine -y 
+choco install clementine --ignorechecksum -y 

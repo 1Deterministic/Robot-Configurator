@@ -1,2 +1,2 @@
 # installs QBitTorrent
-choco install qbittorrent -y 
+choco install qbittorrent --ignorechecksum -y

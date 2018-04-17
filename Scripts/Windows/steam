@@ -1,2 +1,2 @@
 # installs Steam
-choco install steam -y 
+choco install steam --ignorechecksum -y
