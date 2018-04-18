@@ -1,0 +1,14 @@
+# installs the dependencies
+sudo apt install libappindicator1 -y
+
+# creates a temporary folder
+sudo mkdir /tmp/gpmdp
+
+# downloads the installer
+sudo wget https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/download/v4.5.0/google-play-music-desktop-player_4.5.0_amd64.deb -P /tmp/gpmdp
+
+# installs Google Play Music Desktop Player
+sudo dpkg -i /tmp/gpmdp/google-play-music-desktop-player_4.5.0_amd64.deb
+
+# removes the temporary folder
+sudo rm -rf /tmp/gpmdp
