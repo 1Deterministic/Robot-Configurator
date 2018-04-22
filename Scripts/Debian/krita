@@ -1,0 +1,2 @@
+# installs Krita
+sudo apt install krita -y
