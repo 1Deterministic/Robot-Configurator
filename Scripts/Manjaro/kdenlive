@@ -1,0 +1,2 @@
+# installs kdenlive
+yaourt -S kdenlive
