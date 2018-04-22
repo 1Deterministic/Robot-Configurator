@@ -63,3 +63,4 @@ target/
 /History/
 /Private/
 /__pycache__/
+/.gitignore

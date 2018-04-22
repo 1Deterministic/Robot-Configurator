@@ -1,0 +1,2 @@
+# installs Okular
+choco install okular --ignorechecksum -y 
