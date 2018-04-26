@@ -1,0 +1,28 @@
+# creates a temporary folder
+sudo mkdir /tmp/pycharm-community
+
+# downloads the compressed file
+sudo wget https://download.jetbrains.com/python/pycharm-community-2018.1.2.tar.gz -P /tmp/pycharm-community
+
+# extracts the .tar.gz file to /opt folder
+sudo tar xvzf /tmp/pycharm-community/pycharm-community-2018.1.2.tar.gz --directory /opt
+
+# removes the temporary folder
+sudo rm -rf /tmp/pycharm-community
+
+# creates ~/.local/share/applications if doesnt exist
+mkdir ~/.local/share/applications
+
+# creates the menu shortcut
+echo "[Desktop Entry]" >> ~/.local/share/applications/jetbrains-pycharm-ce.desktop
+echo "Version=1.0" >> ~/.local/share/applications/jetbrains-pycharm-ce.desktop
+echo "Type=Application" >> ~/.local/share/applications/jetbrains-pycharm-ce.desktop
+echo "Name=PyCharm Community Edition" >> ~/.local/share/applications/jetbrains-pycharm-ce.desktop
+echo "Icon=/opt/pycharm-community-2018.1.2/bin/pycharm.png" >> ~/.local/share/applications/jetbrains-pycharm-ce.desktop
+echo "Exec="/opt/pycharm-community-2018.1.2/bin/pycharm.sh" %f" >> ~/.local/share/applications/jetbrains-pycharm-ce.desktop
+echo "Comment=The Drive to Develop" >> ~/.local/share/applications/jetbrains-pycharm-ce.desktop
+echo "Categories=Development;IDE;" >> ~/.local/share/applications/jetbrains-pycharm-ce.desktop
+echo "Terminal=false" >> ~/.local/share/applications/jetbrains-pycharm-ce.desktop
+echo "StartupWMClass=jetbrains-pycharm-ce" >> ~/.local/share/applications/jetbrains-pycharm-ce.desktop
+
+# https://www.blogopcaolinux.com.br/2018/04/Instalando-o-PyCharm-no-Debian-e-Ubuntu.html

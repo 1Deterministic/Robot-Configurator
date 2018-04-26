@@ -1,0 +1,2 @@
+# installs Nuitka
+sudo pip3 install nuitka

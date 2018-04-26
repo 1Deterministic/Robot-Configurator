@@ -1,0 +1,2 @@
+# installs SWI Prolog
+sudo apt install swi-prolog -y
