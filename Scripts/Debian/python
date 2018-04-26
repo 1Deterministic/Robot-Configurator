@@ -1,0 +1,2 @@
+# installs Python
+sudo apt install python3 -y

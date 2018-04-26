@@ -1,0 +1,6 @@
+# installs DrRacket
+sudo apt install racket -y
+
+# fixes the empty icon on laucher shortcut
+sudo sed -i "/Icon=plt/d" /usr/share/applications/drracket.desktop
+echo "Icon=/usr/share/racket/pkgs/icons/plt.jpg" | sudo tee /usr/share/applications/drracket.desktop -a

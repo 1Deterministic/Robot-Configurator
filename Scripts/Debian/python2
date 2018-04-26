@@ -1,0 +1,2 @@
+# installs Python 2
+sudo apt install python -y
