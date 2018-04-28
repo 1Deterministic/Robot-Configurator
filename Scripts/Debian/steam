@@ -1,0 +1,5 @@
+# enables 32 bit support
+sudo dpkg --add-architecture i386
+
+# installs Steam
+sudo apt install steam -y

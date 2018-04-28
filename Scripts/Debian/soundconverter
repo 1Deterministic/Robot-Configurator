@@ -1,0 +1,6 @@
+# installs soundconverter
+sudo apt install soundconverter -y
+
+# fixes the empty icon on laucher shortcut
+sudo sed -i "/Icon=soundconverter/d" /usr/share/applications/soundconverter.desktop
+echo "Icon=/usr/share/soundconverter/soundconverter-logo.svg" | sudo tee /usr/share/applications/soundconverter.desktop -a

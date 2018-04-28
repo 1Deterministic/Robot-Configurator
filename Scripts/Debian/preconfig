@@ -18,6 +18,9 @@ su -c "echo '$(whoami)   ALL=(ALL:ALL) ALL' >> /etc/sudoers"
 echo "Enter the root password"
 su -c "adduser $(whoami) sudo"
 
+# adds nonfree repos
+sudo sed -i "s/\bmain\b/main contrib non-free/g" /etc/apt/sources.list
+
 # updates the repos once again
 sudo apt update
 
