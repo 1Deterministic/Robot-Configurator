@@ -1,2 +1,6 @@
 # installs MySQL Workbench
 yaourt -S mysql-workbench
+
+# fixes a bug when Workbench can't write files
+echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+locale-gen

@@ -1,0 +1,37 @@
+# installs the dependencies
+sudo apt install gconf-service -y
+sudo apt install lib32gcc1 -y
+sudo apt install lib32stdc++6 -y
+sudo apt install libc6-i386 -y
+sudo apt install libgconf-2-4 -y
+sudo apt install libpango1.0-0 -y
+sudo apt install nodejs -y
+
+
+# adds Debian sid repos (in order to install npm dependency)
+echo "Enter the root password"
+su -c "echo 'deb http://ftp.br.debian.org/debian/ sid main' >> /etc/apt/sources.list"
+
+# updates the repos
+sudo apt update
+
+# installs npm
+sudo apt install npm -y
+
+# removes sid repo (not needed anymore)
+sudo sed -i '$ d' /etc/apt/sources.list
+
+# restores the previous repos
+sudo apt update
+
+# creates a temporary folder
+sudo mkdir /tmp/unity3d
+
+# downloads the installer
+sudo wget http://beta.unity3d.com/download/1da4c632c3f6/unity-editor_amd64-5.6.0xb8Linux.deb -P /tmp/unity3d
+
+# installs Unity 3D
+sudo dpkg -i /tmp/unity3d/unity-editor_amd64-5.6.0xb8Linux.deb
+
+# removes the temporary folder
+sudo rm -rf /tmp/unity3d

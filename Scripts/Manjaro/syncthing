@@ -4,4 +4,5 @@ yaourt -S syncthing
 # sets syncthing to autostart for the current user
 sudo systemctl enable syncthing@$(whoami).service
 
+# starts syncthing service
 sudo systemctl start syncthing@$(whoami).service
