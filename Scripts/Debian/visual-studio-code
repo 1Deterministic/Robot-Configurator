@@ -1,0 +1,14 @@
+# installs the dependencies
+sudo apt install libgconf-2-4 gconf2-common -y
+
+# creates a temporary folder
+sudo mkdir /tmp/visual-studio-code
+
+# downloads the installer
+sudo wget https://go.microsoft.com/fwlink/?LinkID=760868 -P /tmp/visual-studio-code
+
+# installs Visual Studio Code
+sudo dpkg -i /tmp/visual-studio-code/index.html\?LinkID\=760868
+
+# removes the temporary folder
+sudo rm -rf /tmp/visual-studio-code
