@@ -1,0 +1,32 @@
+# adds Virtualbox repo
+echo "Enter the root password"
+su -c "echo deb http://download.virtualbox.org/virtualbox/debian stretch contrib >> /etc/apt/sources.list.d/virtualbox.list"
+
+# creates a temporary folder
+sudo mkdir /tmp/virtualbox
+
+# downloads the public key
+sudo wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -P /tmp/virtualbox
+
+# adds the public key
+sudo apt-key add /tmp/virtualbox/oracle_vbox_2016.asc
+
+# updates the repos
+sudo apt update
+
+# installs the dependencies
+sudo apt install dkms -y
+sudo apt install build-essential -y
+sudo apt install linux-headers-$(uname -r) -y
+
+# installs Virtualbox
+sudo apt install virtualbox-5.2 -y
+
+# downloads the Extension Pack
+sudo wget https://download.virtualbox.org/virtualbox/5.2.10/Oracle_VM_VirtualBox_Extension_Pack-5.2.10.vbox-extpack -P /tmp/virtualbox
+
+# installs the Extension Pack
+sudo VBoxManage extpack install --replace /tmp/virtualbox/Oracle_VM_VirtualBox_Extension_Pack-5.2.10.vbox-extpack
+
+# removes the temporary folder
+sudo rm -rf /tmp/virtualbox
