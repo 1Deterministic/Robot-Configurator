@@ -1,0 +1,2 @@
+# installs Okular
+sudo apt install okular -y

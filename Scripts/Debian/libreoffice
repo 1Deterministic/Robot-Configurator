@@ -1,0 +1,2 @@
+# installs LibreOffice
+sudo apt install libreoffice -y
