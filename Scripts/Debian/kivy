@@ -1,0 +1,2 @@
+# installs Kivy
+sudo apt install python3-kivy 
