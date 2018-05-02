@@ -1,0 +1,2 @@
+# installs OpenSSH
+sudo apt install ssh -y

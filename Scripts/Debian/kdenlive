@@ -1,0 +1,2 @@
+# installs Kdenlive
+sudo apt install kdenlive -y 
