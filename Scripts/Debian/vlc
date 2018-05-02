@@ -1,0 +1,2 @@
+# installs VLC
+sudo apt install vlc -y

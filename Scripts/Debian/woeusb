@@ -1,0 +1,15 @@
+# installs the dependencies
+sudo apt install libwxbase3.0-0v5 -y
+sudo apt install libwxgtk3.0-0v5 -y
+
+# creates a temporary folder
+sudo mkdir /tmp/woeusb
+
+# downloads the installer
+sudo wget http://download.opensuse.org/repositories/home:/vaiy/Debian_9.0/amd64/woeusb_3.1.4-1~webupd8~trusty0_amd64.deb -P /tmp/woeusb
+
+# installs WoeUSB
+sudo dpkg -i /tmp/woeusb/woeusb_3.1.4-1~webupd8~trusty0_amd64.deb
+
+# removes the temporary folder
+sudo rm -rf /tmp/woeusb
