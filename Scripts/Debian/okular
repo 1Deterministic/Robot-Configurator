@@ -1,2 +1,5 @@
 # installs Okular
 sudo apt install okular -y
+
+# installs support for .epub
+sudo apt install okular-extra-backends -y
