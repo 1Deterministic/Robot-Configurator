@@ -2,5 +2,7 @@
 yaourt -S mysql-workbench
 
 # fixes a bug when Workbench can't write files
-echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
-locale-gen
+# potential bug for en-us native installations with duplicate language entries
+echo "Enter the root password"
+su -c "echo en_US.UTF-8 UTF-8 >> /etc/locale.gen"
+sudo locale-gen
