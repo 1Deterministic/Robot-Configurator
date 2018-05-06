@@ -1,5 +1,6 @@
 # installs the dependencies
 sudo apt install libappindicator1 -y
+sudo apt install libappindicator3-1 -y
 
 # creates a temporary folder
 sudo mkdir /tmp/google-chrome
