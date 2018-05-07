@@ -1,0 +1,20 @@
+# installs linux-headers for the current kernel
+!os.system("sudo pacman -S linux" + get_linux_kernel() + "-headers")
+
+# creates a temporary folder
+sudo mkdir /tmp/vbox-iso
+
+# downloads the guest additions iso to the temporary folder
+sudo wget http://download.virtualbox.org/virtualbox/5.2.8/VBoxGuestAdditions_5.2.8.iso -P /tmp/vbox-iso
+
+# extracts the downloaded iso
+sudo 7z x /tmp/vbox-iso/VBoxGuestAdditions_5.2.8.iso -o/tmp/vbox-iso
+
+# turns the installer executable
+sudo chmod +x /tmp/vbox-iso/VBoxLinuxAdditions.run
+
+# runs the installer
+sudo /tmp/vbox-iso/VBoxLinuxAdditions.run
+
+# removes the temporary folder
+sudo rm -rf /tmp/vbox-iso

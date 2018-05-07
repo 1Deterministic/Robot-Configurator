@@ -1,0 +1,2 @@
+# installs LibreOffice
+yaourt -S libreoffice 
