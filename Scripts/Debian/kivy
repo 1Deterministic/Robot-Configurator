@@ -1,2 +1,11 @@
+# installs git
+sudo apt install git -y
+
+# installs cython
+sudo pip3 install cython
+
+# installs pygame
+sudo pip3 install pygame
+
 # installs Kivy
-sudo apt install python3-kivy -y
+sudo pip3 install git+https://github.com/kivy/kivy.git@master
