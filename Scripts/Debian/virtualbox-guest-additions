@@ -18,3 +18,6 @@ sudo /tmp/vbox-iso/VBoxLinuxAdditions.run
 
 # removes the temporary folder
 sudo rm -rf /tmp/vbox-iso
+
+# adds the user to the vboxsf group
+sudo adduser $(whoami) vboxsf
