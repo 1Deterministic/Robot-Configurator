@@ -1,0 +1,17 @@
+# creates a temporary folder
+mkdir C:\Windows\Temp\wamp
+
+# installs wamp stack
+bitsadmin /transfer download /download /priority normal https://bitnami.com/redirect/to/190362/bitnami-wampstack-7.0.30-0-windows-x64-installer.exe C:\Windows\Temp\wamp\wamp.exe
+start /wait C:\Windows\Temp\wamp\wamp.exe --mode unattended --base_password "bitnami"
+
+# reporting the password used
+echo "WAMP was installed with the base password bitnami"
+
+# removes the temporary folder
+rmdir /s C:\Windows\Temp\wamp\
+
+
+
+
+
