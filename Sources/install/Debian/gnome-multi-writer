@@ -1,0 +1,2 @@
+# installs gnome multi writer tool
+sudo apt install gnome-multi-writer -y
