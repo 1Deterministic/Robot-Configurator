@@ -1,0 +1,5 @@
+# sets a greater ram cache for file operations
+su -c "echo vm.dirty_bytes = 200000000 >> /etc/sysctl.conf"
+
+# apllies the change
+sudo sysctl -p

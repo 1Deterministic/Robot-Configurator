@@ -1,0 +1,5 @@
+# removes all bloatware
+sudo apt purge gnome-games gnome-calendar yelp libreoffice* inkscape gimp gnome-weather brasero cheese gnome-contacts gnome-dictionary reportbug gnome-documents evolution synaptic gnome-sound-recorder gnome-documents gnome-maps gnome-music polari tracker-gui rhythmbox shotwell transmission-gtk totem -y
+
+# autoremoves left dependencies
+sudo apt autoremove -y

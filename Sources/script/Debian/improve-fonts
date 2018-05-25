@@ -1,0 +1,5 @@
+# copies the .fonts.conf
+cp Sources/scripts/Debian/fonts.conf /home/$(whoami)/.fonts.conf
+
+# installs Microsoft fonts
+sudo apt install ttf-mscorefonts-installer

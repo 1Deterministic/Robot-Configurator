@@ -12,47 +12,19 @@
 # You can leave unsupported programs by your platform for 
 # installation, they will be ignored automatically
 #
-# So if you use, for instance, ./robotconfigurator.exe "/path/to/template.txt"
+# So if you use, for instance, Robot_Configurator "/path/to/Template.txt"
 # All the programs below will be installed (if supported) on the exact same order
+#
+# You can also pass commands as arguments
+#
+# Take a look at the Sources folder to check what programs and misc scripts are available for your platform
 
-7-zip
-allegro5
-android-studio
-arduino
-clementine
-eyed3
-firefox
-firefox-esr
-gimp
-gitkraken
-google-chrome
-google-play-music-desktop-player
-inkscape
-krita
-mediamonkey
-msi-afterburner
-mysql-workbench
-netbeans
-nuitka
-origin
-preconfig
-prolog
-pycharm-community
-python
-python2
-qbittorrent
-racket
-rufus
-remove-uneeded-dependencies
-soundconverter
-steam
-syncthing
-unity3d
-uplay
-virtualbox
-visual-studio-2017-community
-visual-studio-code
-vlc
-win32-disk-imager
-woeusb
-youtube-dl
+# To install programs
+#
+install:google-chrome
+install:libreoffice
+
+# To run misc scripts
+#
+script:improve-fonts
+script:remove-gnome-bloatware

@@ -43,7 +43,11 @@ def get_linux_kernel():
 # run the correct scripts to install program to the specified system
 def install(program, system):
     try:
-        with open("Scripts/" + system + "/" + program, "r") as script:
+        # install:program
+        # script:action
+        command = program.split(":")
+
+        with open("Sources/" + command[0] + "/" + system + "/" + command[1], "r") as script:
             for line in script:
                 if (not line == "\n") and (not line.startswith("#")):
                     if line.startswith("!"):
@@ -53,7 +57,10 @@ def install(program, system):
                 else:
                     pass
     except IOError:
-        print(program + " is not supported on this platform")
+        print(program + ": is not supported on this platform")
+
+    except IndexError:
+        print(program + ": line not recognized")
 
 # starts the program
 if __name__ == "__main__":
@@ -67,10 +74,12 @@ if __name__ == "__main__":
                     # tries to install every parameter received
                     with open(param, "r") as programs_to_install:
                         for line in programs_to_install:
+                            # ignores commented and empty lines
                             if (not line.startswith("#")) and (not line == "\n"):
+                                # runs the adequate script
                                 install(line.replace('\n', ''), get_os())
 
-                # install every entry if a file is received (check programs-to-install.txt for an example)
+                # installs a received argument
                 else:
                     install(param, get_os())
 

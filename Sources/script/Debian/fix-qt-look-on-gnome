@@ -1,0 +1,7 @@
+# installs the plugins
+sudo apt install qt5-style-plugins
+
+# adds an enviroment variable
+su -c "echo export QT_QPA_PLATFORMTHEME=gtk2 >> /etc/environment"
+
+echo "You have to reboot the system for the changes to apply"
